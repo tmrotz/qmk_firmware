@@ -2,7 +2,7 @@
 # Install to keyboard 
 ```
 cd ~
-git clone https://github.com/qmk/qmk_firmware.git 
+git clone https://github.com/tmrotz/qmk_firmware.git
 git submodule
 qmk config user.keyboard=crkbd/rev1
 qmk config user.keymap=travis
