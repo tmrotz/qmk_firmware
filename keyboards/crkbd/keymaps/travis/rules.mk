@@ -1,2 +1,1 @@
-CONVERT_TO = blok
 CAPS_WORD_ENABLE = yes
