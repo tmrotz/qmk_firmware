@@ -30,7 +30,8 @@ enum layer_names {
 enum custom_keycodes {
     EDJ_DEV = SAFE_RANGE,
     EDJ_CLN,
-    EDJ_PROD
+    EDJ_PROD,
+    L33T
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -48,6 +49,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case EDJ_PROD:
             if (record->event.pressed) {
                 SEND_STRING_DELAY("bTbtjfYpYKSflUKBHduXX33EHHvz8j\n", 40); }
+        break;
+        case L33T:
+            if (record->event.pressed) {
+                SEND_STRING_DELAY("L33T69A$$420\n", 40); }
         break;
     }
     return true;
@@ -95,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_SLEP,                      KC_WAKE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX,  QK_RBT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, DM_REC1, DM_RSTP, DM_PLY1, XXXXXXX,                      XXXXXXX, EDJ_DEV, EDJ_CLN,EDJ_PROD, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX, DM_REC1, DM_RSTP, DM_PLY1, XXXXXXX,                         L33T, EDJ_DEV, EDJ_CLN,EDJ_PROD, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MPRV, KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
