@@ -48,7 +48,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         break;
         case EDJ_PROD:
             if (record->event.pressed) {
-                SEND_STRING_DELAY("bTbtjfYpYKSflUKBHduXX33EHHvz8j\n", 40); }
+                SEND_STRING_DELAY("bTbtjfYpYKSflUKBHduXX33EHHvz8k\n", 40); }
         break;
         case L33T:
             if (record->event.pressed) {
